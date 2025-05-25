@@ -16,9 +16,9 @@ export async function SendMail(jsonData: string) {
 		});
 		//set content
 		const content = {
-			from: theme.mail.from!,
-			to: theme.mail.to!,
-			subject: theme.mail.subject!,
+			from: theme.email.from!,
+			to: theme.email.to!,
+			subject: theme.email.subject!,
 			text: jsonData,
 			headers: {
 				'Content-Type': 'text/plain; charset=UTF-8',
