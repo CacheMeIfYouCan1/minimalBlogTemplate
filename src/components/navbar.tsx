@@ -1,9 +1,9 @@
 "use client"; 
 
 import React from 'react';
-import Title from '@/components/title';
-import Logo from '@/components/logo';
-import Navigation from '@/components/navigation';
+import Title from '@/components/ui/title';
+import Logo from '@/components/ui/logo';
+import Navigation from '@/components/ui/navigation';
 
 
 

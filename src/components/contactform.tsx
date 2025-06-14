@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
+import Button from '@/components/ui/button';
 import { theme } from '@/theme/theme';
 
 import Markdown from 'markdown-to-jsx';
@@ -49,7 +50,7 @@ export default function ContactForm() {
 		<p className="pt-5 pb-10 text-center w-128 justify-self-center    col-start-2 col-span-3" >
 			{theme.contact.text}
 		</p>
-		<form onSubmit={handleSubmit} className="col-start-2 col-span-3 grid grid-cols-3">
+		<form onSubmit={handleSubmit} className="col-start-2 col-span-3  flex flex-col items-center">
 				<input
 					name="name"
 					placeholder="Name"
@@ -80,11 +81,7 @@ export default function ContactForm() {
 					
 					>
 				</textarea>
-				<button
-				className="mb-5 justify-self-center col-start-2 mt-5 w-32 h-10 border-2 rounded-lg border-white    hover:bg-gray-400 cursor-pointer"
-				type="submit">
-					SEND
-				</button>
+			<Button buttonText="SUBMIT" />
 		</form>
 		
 		
@@ -100,7 +97,7 @@ export default function ContactForm() {
 		<p className="pt-5 pb-10 text-center " >
 			{theme.contact.text}
 		</p>
-		<form onSubmit={handleSubmit} className="">
+		<form onSubmit={handleSubmit} className="flex items-center">
 				<input
 					name="name"
 					placeholder="Name"
@@ -126,11 +123,7 @@ export default function ContactForm() {
 					required
 					>
 				</textarea>
-				<button
-				className="mb-5 block mx-auto  mt-5 w-32 h-10 border-2 rounded-lg border-white hover:bg-gray-400 cursor-pointer "
-				type="submit">
-					SUBMIT
-				</button>
+			<Button buttonText="SUBMIT" />
 		</form>
 		
 	

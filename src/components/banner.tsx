@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
+import Button from '@/components/ui/button';
 import { theme } from '@/theme/theme';
 
 import Markdown from 'markdown-to-jsx';
@@ -46,12 +47,7 @@ export default function banner({
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>
-			<button
-				type = "submit"
-				className="z-20 relative mt-5 w-32 h-10 border-2 rounded-lg border-color-white  hover:bg-gray-400 cursor-pointer" 
-			>
-			SEARCH
-			</button>
+			<Button buttonText="SEARCH" />
 		</form>
 
 						
